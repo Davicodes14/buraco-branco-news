@@ -116,7 +116,9 @@ hr {border-color: rgba(255, 255, 255, 0.5);}
 .imgs{width: 80px;max-width:140px;height: auto;}
 
 
-.info{background-image: url(img/univ.jpg);background-attachment: fixed;background-size: 1000%; }
+.info{background-image: url(img/univ.jpg);
+  background-attachment: fixed;
+  background-size: 1000%; }
   
 .link{display: flex;
   flex-direction: row;

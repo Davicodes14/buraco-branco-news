@@ -170,7 +170,9 @@ height: 250px;
 
 .detal{text-align: left;}
 
-.info{background-image: url(img/univ.jpg);background-attachment: fixed;background-size: 1000%; }
+.info{background-image: url(img/univ.jpg);
+  background-attachment: fixed;
+  background-size: 1000%; }
   
 .link{display: flex;
   flex-direction: row;
