@@ -1,7 +1,7 @@
 /*body e * */
 body{margin: 1px;
 }
-.info{background-image: url(img/univ.jpg);background-size: 100%;background-attachment: fixed;}
+.info{background-image: url(img/univ.jpg) ;background-size: 100%;background-attachment: fixed; }
 /*menu------------------------------------------------------*/
 #logo{width: 50px;height: 50px;}
 
@@ -10,9 +10,6 @@ body{margin: 1px;
   from {transform: rotate(0turn);}
   to {transform: rotate(1.0turn);}
   }
-
-
-
 
 .container {
   position: relative;
@@ -48,40 +45,46 @@ a{text-decoration: none;color: white}
 /*fim do menu------------------------------------------------------*/
 
 /*inicio das formataçoes comuns muito usadas------------------------------------------------------*/
-
+h2{font-family: Arial, Helvetica, sans-serif;}
+h3{font-family: Arial, Helvetica, sans-serif;}
+p{font-family: 'Courier New', Courier, monospace;}
 .link{display: flex;
     flex-direction: row;
     font-size: 16px;
-    border: ;
     height: 100px;
     align-items: center;
     background: rgba(0,0,0,0.6);
     border: 5px black solid;
     border-radius: 5px;
+    min-width: 238px;
     }
-.link p{padding-left: 2em}
+.link p{padding-left:2em;}
 
-.linksinfo{ width: 30%;margin-top: 90px;padding: 10px;
+.linksinfo{ width: 20%;margin-top: 90px;padding: 10px;
     }
 
 .imgs{width: 140px;}
 
-.continfo{width: 850px; padding: 25px;}
+.continfo{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+text-align: center;}
 
 .cont {
-    margin: 5px 25px;
     color: white;
-    padding: 0px 100px;
     font-size: 19px;
-    flex-direction: row;
     /*ajudou mas prejudicou a pagina falando antes do big bang*/
     display: flex;
     justify-content: center;
-    align-items: top;
 
   }
 
-  .imgq{border: black 2px solid; border-radius: 15px; width: 750px; margin: 0px 20px;position: static;}
+  .imgq{border: black 2px solid;
+        border-radius: 15px;
+        width: 90%;
+        position: static;}
 
 /*fim das formataçoes comuns muito usadas------------------------------------------------------*/
 
@@ -91,17 +94,13 @@ a{text-decoration: none;color: white}
 
 /*fim do home------------------------------------------------------*/
 
-  .h4{
-      font-weight: 600;}
-
-
 hr {border-color: rgba(255, 255, 255, 0.5);}
 
 .divh {
   border-radius: 15px;
    height: 437px;
    border: black 2px solid;
-   width: 750px; 
+   width: 600px;
    margin: 0px 20px;
    background: url(img/euler.jpg)no-repeat;
    background-position: center;
@@ -129,3 +128,81 @@ height: 250px;
 }
 
 /*fim do contato------------------------------------------------------*/
+/*inicio aplicando proporçoes para telefones------------------------------------------------------*/
+@media (max-width:768px) 
+{
+  *{font-size: 12px;}
+  .continfo{width: 320px;display: flex;flex-direction: column;align-items: center}
+  .continfo p{text-align: center;}
+
+  .divh {
+    border-radius: 15px;
+     height: 170px;/*437px*/
+     border: black 2px solid;
+     width: 270px; /*750px*/
+     margin: 0px 0px;
+     background: url(img/euler.jpg)no-repeat;
+     background-position: center;
+     background-size: 100% 100%;
+     
+  }
+  
+.cont {
+    color: white;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;}
+
+.imgq{
+  border-radius: 15px;
+   height: 170px;/*437px*/
+   border: black 2px solid;
+   width: 300px; /*750px*/
+   margin: 0px 0px;
+   background: url(img/euler.jpg)no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+   
+}
+.imgs{width: 80px;max-width:140px;}
+
+.detal{text-align: left;}
+
+.info{background-image: url(img/univ.jpg);background-attachment: fixed;background-size: 1000%; }
+  
+.link{display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  height: 100%;
+  width: 240px;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  border: 5px black solid;
+  border-radius: 5px;
+  overflow: hidden;
+  
+  }
+.link p{padding-left: 2em;font-size: 11px;}
+
+.linksinfo{ width: 30%;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+}
+@media (min-width:768px) and (max-width:1440px)
+{
+  .link{font-size: 11px;}
+}
+@media (min-width:768px) and (max-width:1024px)
+{
+  .divh{
+    width: 90%;
+    height: 80%;}
+}
+
+/*fim aplicando proporçoes para telefonesdo contato------------------------------------------------------*/
